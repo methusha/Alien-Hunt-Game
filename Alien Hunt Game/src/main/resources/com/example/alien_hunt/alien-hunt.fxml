@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="671.0" prefWidth="563.0" spacing="20.0" stylesheets="@../../../AlienHunt.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.alien_hunt.AlienController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <FlowPane alignment="CENTER" hgap="30.0" prefHeight="33.0" prefWidth="523.0">
+      <children>
+         <TextField fx:id="playerPrompt" prefHeight="22.0" prefWidth="149.0" promptText="Please Enter Your Name" />
+         <Button fx:id="submit" mnemonicParsing="false" onAction="#enterPlayer" text="Submit" />
+         <Label fx:id="highScore" text="Current High Score:">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Label fx:id="yourScore" text="Your Score:">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Label>
+      </children>
+   </FlowPane>
+    <FlowPane alignment="CENTER" hgap="10.0" prefHeight="60.0" prefWidth="485.0">
+        <children>
+            <Button fx:id="button1" disable="true" mnemonicParsing="false" onAction="#onButton1Click" prefHeight="45.0" prefWidth="50.0" text="1">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font></Button>
+            <Button fx:id="button2" disable="true" mnemonicParsing="false" onAction="#onButton2Click" prefHeight="45.0" prefWidth="50.0" text="2">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font></Button>
+            <Button fx:id="button3" disable="true" mnemonicParsing="false" onAction="#onButton3Click" prefHeight="45.0" prefWidth="50.0" text="3">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font></Button>
+            <Button fx:id="button4" disable="true" mnemonicParsing="false" onAction="#onButton4Click" prefHeight="45.0" prefWidth="50.0" text="4">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font></Button>
+            <Button fx:id="button5" disable="true" mnemonicParsing="false" onAction="#onButton5Click" prefHeight="45.0" prefWidth="50.0" text="5">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font></Button>
+            <Button fx:id="button6" disable="true" mnemonicParsing="false" onAction="#onButton6Click" prefHeight="45.0" prefWidth="50.0" text="6">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font></Button>
+            <Button fx:id="button7" disable="true" mnemonicParsing="false" onAction="#onButton7Click" prefHeight="45.0" prefWidth="50.0" text="7">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font></Button>
+            <Button fx:id="button8" disable="true" mnemonicParsing="false" onAction="#onButton8Click" prefHeight="45.0" prefWidth="50.0" text="8">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font></Button>
+        </children>
+    </FlowPane>
+   <FlowPane alignment="CENTER" hgap="30.0" prefHeight="200.0" prefWidth="600.0">
+      <children>
+         <ImageView fx:id="earthImage" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+          <Canvas fx:id="drawingCanvas" height="200.0" width="200.0" />
+      </children>
+   </FlowPane>
+
+    <Label fx:id="welcomeText">
+        <font>
+            <Font size="18.0" />
+        </font></Label>
+   <ToggleButton fx:id="musicToggle" mnemonicParsing="false" onAction="#onMusicToggle" text="Turn Music On" />
+</VBox>

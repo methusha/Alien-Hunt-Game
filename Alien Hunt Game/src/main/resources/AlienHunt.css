@@ -1,0 +1,31 @@
+.button{
+    -fx-text-fill: #00008b;
+    -fx-background-color: #d3d3d3;
+    -fx-border-color: #00008b;
+    -fx-border-radius: 5;
+    -fx-padding: 3 6 6 6;
+}
+
+.toggle-button{
+    -fx-text-fill: #00008b;
+    -fx-background-color: #d3d3d3;
+    -fx-border-color: #00008b;
+    -fx-border-radius: 5;
+    -fx-padding: 3 6 6 6;
+}
+
+VBox{
+    -fx-background-color: #dcdcdc;
+}
+
+.text-field{
+    -fx-text-fill: #00008b;
+    -fx-background-color: #d3d3d3;
+    -fx-border-color: #00008b;
+    -fx-border-radius: 5;
+    -fx-padding: 3 6 6 6;
+}
+
+.label{
+    -fx-text-fill: #00008b;
+}
